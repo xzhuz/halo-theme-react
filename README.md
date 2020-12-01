@@ -46,7 +46,22 @@
 ```bash
 git clone https://github.com/xzhuz/halo-theme-react.git
 cd halo-theme-react
+# 安装
 npm install
+```
+
+**修改配置**
+
+根据自己本机环境修改 `app/service/axios-config.js`。
+
+```js
+const baseUrl = process.env.NODE_ENV === 'production' ? 'http://127.0.0.1:8090' : 'http://127.0.0.1:8090';
+const apiAuth = process.env.NODE_ENV === 'production' ? '111111111111111' : '111111111111111';
+```
+
+**启动**
+
+```bash
 npm start
 ```
 
