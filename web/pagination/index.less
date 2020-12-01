@@ -1,0 +1,36 @@
+@baseHoverColor: #f1404b;
+@pageTextColor: #fff;
+.is-invisible {
+	display: none;
+}
+.pagination-circle {
+	display: inline-block;
+	margin: 0 2px;
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 50%;
+	line-height: 2.4rem;
+	color: #000;
+	text-align: center;
+}
+
+.pagination-circle:hover {
+	cursor: pointer;
+}
+
+.pagination-circle.is-current, .pagination-circle:hover {
+	background-color: @baseHoverColor;
+	background-image: none;
+	color:@pageTextColor;
+}
+
+.pagination-circle:hover {
+	color: @pageTextColor;
+}
+
+.pagination-list .disabled {
+	display: none;
+}
+
+
+

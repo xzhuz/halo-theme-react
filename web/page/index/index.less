@@ -1,0 +1,143 @@
+.bg-cover {
+	background-color: #101012;
+	display: table;
+	height: 480px;
+	position: relative;
+	width: 100%;
+	opacity: 0.95;
+	z-index: 3;
+}
+
+.bg-cover .slogan {
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+.bg-cover {
+    -webkit-animation: fade-down 0.3s;
+    animation: fade-down 0.3s;
+}
+
+.headertop:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	background-attachment: fixed;
+}
+
+.headertop:before {
+	background-color: rgba(0,0,0,.3);
+}
+
+
+// 首页个人信息展示开始
+.home-cover {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	color: #93979e;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	text-align: center;
+	transition: width .5s ease,height .5s ease;
+}
+
+
+.home-cover .wapper {
+	height:100%;
+	width:100%;
+	background: rgba(0,0,0,.4);
+	display: flex;
+	align-items: center;
+}
+
+.home-cover .card-inner {
+	padding: 0;
+	border: 0;
+	width: 35%;
+	margin: 0 auto;
+}
+
+.home-cover .card-inner header {
+	border-bottom: 1px solid hsla(0,0%,100%,.1);
+	margin-bottom: 40px;
+}
+
+.home-cover .card-inner header img {
+	border: 3px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+	transition: .4s ease-in-out;
+	vertical-align: middle;
+	display: initial;
+}
+
+.home-cover .card-inner header h1 {
+	margin: 15px 15px 0;
+	color: #fff;
+	font-size: 2em;
+	line-height: 1.2em;
+	font-weight: 400;
+}
+
+.home-cover .card-inner header h2 {
+	color: #ccc;
+	letter-spacing: 3px;
+	font-size: 1rem;
+	// font-weight: lighter;
+}
+
+.home-cover .card-inner ul {
+	position: relative;
+	margin: 0;
+	list-style-type: none;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	width: 100%;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	border-bottom: 1px solid hsla(0,0%,100%,.1);
+	padding-bottom: 40px;
+}
+
+.home-cover .card-inner ul li {
+	display: inline-block;
+	transition: all .2s;
+	width: 100%;
+	height: 100%;
+	border-left: .1px solid hsla(0,0%,100%,.1);
+	border-right: .1px solid hsla(0,0%,100%,.1);
+}
+
+.home-cover .card-inner ul li a {
+	color: #fff;
+	transition: all .2s;
+}
+
+.home-cover .icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: currentColor;
+	font-family: iconfont!important;
+	font-size: inherit;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+@media all and (max-width: 700px) {
+	.home-cover .card-inner {
+		width: 80%;
+	}
+}

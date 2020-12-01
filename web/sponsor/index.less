@@ -1,0 +1,54 @@
+@baseHighLightColor: #f1404b;
+.donate {
+	display: block;
+	text-align: center;
+	margin: 10px auto;
+
+}
+
+.donate .qrcode {
+	padding: 10px;
+	width: 200px;
+	height: 200px;
+	z-index: 999;
+	margin: 10px auto;
+}
+
+.donate .qrcode img {
+	-webkit-animation: fade-down .3s;
+	animation: fade-down .3s;
+	max-height: 200px;
+}
+
+.donate .icon {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #e0e0e0;
+	background-color: #fff;
+	border-radius: 2em;
+	padding: 4px 16px;
+	z-index: 20;
+}
+
+.donate .icon #alipay {
+	padding-right: 8px;
+	border-right: 1px solid #e0e0e0;
+}
+
+.donate .icon a,
+.donate .icon i {
+	font-size: 1.25em;
+}
+
+
+.donate .icon #wechat {
+	padding-left: 8px;
+}
+
+.donate .active-bg {
+	color: @baseHighLightColor;
+}
+
+.donate .icon a:hover {
+	transform: scale(1.1);
+}
